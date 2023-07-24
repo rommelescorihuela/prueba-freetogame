@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let juego of juegos">
+    <div class="card mb-4">
+      <img [src]="juego.thumbnail" class="card-img-top" alt="{{ juego.title }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ juego.title }}</h5>
+        <p class="card-text">{{ juego.short_description }}<a href="juegos/{{juego.id}}">Ver mas</a></p>
+      </div>
+    </div>
+  </div>
+</div>

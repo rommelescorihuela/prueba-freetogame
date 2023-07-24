@@ -1,0 +1,16 @@
+<!-- app/componentes/detalle-juego/detalle-juego.component.html -->
+<div *ngIf="juego" class="row">
+  <div class="col-md-6">
+    <h2>{{ juego.title }}</h2>
+    <img src={{juego.thumbnail}}>
+  </div>
+  <div class="col-md-6">
+    <p>Genero: {{ juego.genre }}</p>
+    <p>Plataforma: {{ juego.platform }}</p>
+    <p>Descripcion: {{ juego.short_description }}</p>
+    <p>Url del juego: <a href="{{juego.game_url}}">{{juego.game_url}}</a></p>
+  </div>
+  <div class="col-md-12 text-center">
+    <button (click)="volver()" class="btn btn-primary">volver</button>
+  </div>
+</div>
